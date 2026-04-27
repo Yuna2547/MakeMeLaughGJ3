@@ -55,6 +55,7 @@
     </ClCompile>
     <ClCompile Include="DebugDisplay.cpp" />
     <ClCompile Include="Dialog.cpp" />
+    <ClCompile Include="Customcursor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BG_parralax_Full.h">
@@ -110,6 +111,7 @@
     </ClInclude>
     <ClInclude Include="DebugDisplay.h" />
     <ClInclude Include="Dialog.h" />
+    <ClInclude Include="Customcursor.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ASTRAENGINE">

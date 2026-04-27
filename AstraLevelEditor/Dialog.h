@@ -38,6 +38,7 @@ public:
 	void setText();
 	void updateDial(float dt);
 	void renderDial(sf::RenderWindow& window);
+	void setDialog(int id);
 };
 
 class ChoiceDialog {

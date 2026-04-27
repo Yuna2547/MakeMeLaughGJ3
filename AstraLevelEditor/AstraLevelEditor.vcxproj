@@ -143,6 +143,7 @@
     <ClCompile Include="BG_parralax_Full.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="Customcursor.cpp" />
     <ClCompile Include="DebugDisplay.cpp" />
     <ClCompile Include="Dialog.cpp" />
     <ClCompile Include="DisplayEntity.cpp" />
@@ -165,6 +166,7 @@
     <ClInclude Include="BG_parralax_Full.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Collider.h" />
+    <ClInclude Include="Customcursor.h" />
     <ClInclude Include="DebugDisplay.h" />
     <ClInclude Include="Dialog.h" />
     <ClInclude Include="DisplayEntity.h" />

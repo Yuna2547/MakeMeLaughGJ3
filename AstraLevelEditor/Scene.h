@@ -18,4 +18,5 @@ public:
 	virtual ~Scene();
 	virtual void displayScene(sf::RenderWindow& window);
 	virtual void nextScene(SceneState& currentScene, keys* _myKeys, sf::RenderWindow& window) = 0;
+	virtual void handleEvent(const sf::Event& event, sf::RenderWindow& window);
 };

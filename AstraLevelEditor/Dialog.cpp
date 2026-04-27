@@ -106,6 +106,10 @@ void Dialog::renderDial(sf::RenderWindow& window) {
 	window.draw(*text);
 }
 
+void Dialog::setDialog(int id){
+	dialog = id;
+}
+
 ChoiceDialog::ChoiceDialog() {
 	font.openFromFile("font/Pixellettersfull-BnJ5.ttf");
 
