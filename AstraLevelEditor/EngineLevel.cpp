@@ -20,6 +20,7 @@ EngineLevel::EngineLevel(sf::RenderWindow& window, Global& var_) {
     alexSprite = new sf::Sprite(alexTexture);
 
     sf::Vector2u alexTexSize = alexTexture.getSize();
+    alexSprite->setOrigin({ alexTexSize.x / 2.f, alexTexSize.y / 2.f });
     alexSprite->setPosition({ winSize.x / 2.f, winSize.y / 2.f + 50 });
 
     cursor = new CustomCursor(window, "sprite/pushpush.png", "sprite/feather.png");
