@@ -28,42 +28,34 @@ void Dialog::setText() {
 	isTyping = true;
 
 	if (dialog == 0) {
-		fullText = ("This light is comforting...");
-		textureFace.loadFromFile("sprite/Benoit.png");
+		fullText = ("Espece de coin coin !");
 	}
 	if (dialog == 1) {
-		fullText = ("Oh right ! I should write in my diary");
-		textureFace.loadFromFile("sprite/surprisedMari.png");
-		
+		fullText = ("T'as dit a Youssef de rentrer chez lui ? T'es raciste en fait !");	
 	}
 	if (dialog == 2) {
-		fullText = ("Awww I love you my cute Blacky, miss you so much");
-		textureFace.loadFromFile("sprite/laughingMari.png");
+		fullText = ("Gros canard");
 	}
 	if (dialog == 3) {
-		fullText = ("Here is my computer ! I really need to finish the games I bought...");
-		textureFace.loadFromFile("sprite/shockedMari.png");
+		fullText = ("T'as plus d'appart ? Awww...");
 	}
 	if (dialog == 4) {
-		fullText = ("Alright, let's start Devil May Cry 4");
-		textureFace.loadFromFile("sprite/smilingMari.png");
+		fullText = ("Bah alors ? On est soumis ? Coquinou, va !");
 	}
 	if (dialog == 5) {
-		fullText = ("I'll play later, I have a project to finish...");
-		textureFace.loadFromFile("sprite/surprisedMari.png");
+		fullText = ("Tu batteras jamais le panthéon cinq");
 	}
 	if (dialog == 6) {
-		fullText = ("I don't wanna go outside, it's way too hot...");
-		textureFace.loadFromFile("sprite/anxiousMari.png");
+		fullText = ("Awww...");
 	}
 	if (dialog == 7) {
-		fullText = ("It's a plain box of tissue that I use when I'm sick, what else?");
-		textureFace.loadFromFile("sprite/smirkingMari.png");
+		fullText = ("a");
 	}
 	dial.openFromFile("sound/talking.mp3");
 	dial.setLooping(false);
 	dial.setVolume(50.f);
 	dial.play();
+	textureFace.loadFromFile("sprite/Benoit.png");
 	rectFace.setTexture(&textureFace);
 	rectDial.setTexture(&textureDial);
 }
