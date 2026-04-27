@@ -54,4 +54,7 @@ public:
 	sf::RectangleShape teaseButton;
 	sf::Text* teaseButtonText;
 	bool wasMousePressed;
+
+	bool alexIsSad = false;
+	float alexSadTimer = 0.0f;
 };

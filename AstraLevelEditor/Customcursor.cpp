@@ -6,7 +6,7 @@ CustomCursor::CustomCursor(sf::RenderWindow& window, const std::string& handPath
 
     window.setMouseCursorVisible(false);
 
-    sprite.setSize({ 80.f, 80.f });
+    sprite.setSize({ 200.f, 200.f });
     applyTexture();
 }
 
@@ -21,7 +21,7 @@ CustomCursor::Mode CustomCursor::getMode() const {
 
 void CustomCursor::update(sf::RenderWindow& window) {
     sf::Vector2i mousePos = sf::Mouse::getPosition(window);
-    sprite.setPosition({ static_cast<float>(mousePos.x), static_cast<float>(mousePos.y) });
+    sprite.setPosition({ static_cast<float>(mousePos.x - 100), static_cast<float>(mousePos.y - 80) });
 }
 
 void CustomCursor::draw(sf::RenderWindow& window) {

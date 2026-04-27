@@ -20,7 +20,6 @@ EngineLevel::EngineLevel(sf::RenderWindow& window, Global& var_) {
     alexSprite = new sf::Sprite(alexTexture);
 
     sf::Vector2u alexTexSize = alexTexture.getSize();
-    alexSprite->setOrigin({ alexTexSize.x / 2.f, alexTexSize.y / 2.f });
     alexSprite->setPosition({ winSize.x / 2.f, winSize.y / 2.f + 50 });
 
     cursor = new CustomCursor(window, "sprite/pushpush.png", "sprite/feather.png");
@@ -89,6 +88,15 @@ void EngineLevel::onChoiceMade(ChoiceDialog::Choice choice) {
 
 void EngineLevel::update(const bool* keys, float dt) {
     dialog->updateDial(dt);
+    if (alexIsSad) {
+        alexSadTimer += dt;
+        if (alexSadTimer >= 1.0f) {
+            alexIsSad = false;
+            alexSadTimer = 0.0f;
+            alexTexture.loadFromFile("sprite/alexneutre.png");
+            alexSprite->setTexture(alexTexture);
+        }
+    }
 }
 
 void EngineLevel::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
@@ -114,6 +122,13 @@ void EngineLevel::handleEvent(const sf::Event& event, sf::RenderWindow& window) 
                 dialog->setDialog(randomDialog);
                 dialog->setText();
                 dialog->isActive = true;
+            }
+            else if (alexSprite->getGlobalBounds().contains(mousePos)) {
+                alexIsSad = !alexIsSad;
+                if (alexIsSad) {
+                    alexTexture.loadFromFile("sprite/alextriste.png");
+                }
+                alexSprite->setTexture(alexTexture);
             }
         } 
     }  
