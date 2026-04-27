@@ -29,7 +29,7 @@ void Dialog::setText() {
 
 	if (dialog == 0) {
 		fullText = ("This light is comforting...");
-		textureFace.loadFromFile("sprite/smilingMari.png");
+		textureFace.loadFromFile("sprite/Benoit.png");
 	}
 	if (dialog == 1) {
 		fullText = ("Oh right ! I should write in my diary");
