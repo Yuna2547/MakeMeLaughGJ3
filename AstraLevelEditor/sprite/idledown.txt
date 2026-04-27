@@ -1,0 +1,4 @@
+sprite/idledown.png
+32 31
+1
+1000

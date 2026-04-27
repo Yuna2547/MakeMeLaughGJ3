@@ -1,0 +1,4 @@
+sprite/walkingdownMari.png
+32 31
+4
+0.2

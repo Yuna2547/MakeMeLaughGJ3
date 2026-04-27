@@ -1,0 +1,25 @@
+#include "Collider.h"
+
+Collider::Collider(sf::RenderWindow& window, float posX_, float posY_, float sizeX_, float sizeY_, std::string image) {
+
+	pos = {posX_, posY_};
+	size = { sizeX_, sizeY_ };
+
+	rect.setPosition(pos);
+	rect.setSize(size);
+
+	if (!texture.loadFromFile(image)) {
+		rect.setFillColor(sf::Color::Magenta);
+	}
+	else {
+		rect.setTexture(&texture);
+	}
+}
+
+void Collider::render(sf::RenderWindow& window) {
+	window.draw(rect);
+	// TF i lose 50% fps while doing this
+}
+
+Collider::~Collider() {
+}

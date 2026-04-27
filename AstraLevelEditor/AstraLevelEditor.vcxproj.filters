@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="BG_parralax_Full.cpp">
+      <Filter>ASTRAENGINE\.CPP\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="BGstatic.cpp">
+      <Filter>ASTRAENGINE\.CPP\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>ASTRAENGINE\.CPP\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>ASTRAENGINE\.CPP\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayEntity.cpp">
+      <Filter>ASTRAENGINE\.CPP\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineLevel.cpp">
+      <Filter>ASTRAENGINE\.CPP\LevelSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Global.cpp">
+      <Filter>ASTRAENGINE\.CPP\LevelSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI_button.cpp">
+      <Filter>ASTRAENGINE\.CPP\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyStruct.cpp">
+      <Filter>ASTRAENGINE\.CPP\LevelSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelLoader.cpp">
+      <Filter>ASTRAENGINE\.CPP\LevelSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Pawn.cpp">
+      <Filter>ASTRAENGINE\.CPP\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEX.cpp">
+      <Filter>ASTRAENGINE\.CPP\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>ASTRAENGINE\.CPP\LevelSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>ASTRAENGINE\.CPP\LevelSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine.cpp">
+      <Filter>ASTRAENGINE\.CPP\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>ASTRAENGINE\.CPP\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="TXanimated.cpp">
+      <Filter>ASTRAENGINE\.CPP\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugDisplay.cpp" />
+    <ClCompile Include="Dialog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BG_parralax_Full.h">
+      <Filter>ASTRAENGINE\.H\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="BGstatic.h">
+      <Filter>ASTRAENGINE\.H\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>ASTRAENGINE\.H\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>ASTRAENGINE\.H\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayEntity.h">
+      <Filter>ASTRAENGINE\.H\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineLevel.h">
+      <Filter>ASTRAENGINE\.H\LevelSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Global.h">
+      <Filter>ASTRAENGINE\.H\LevelSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI_button.h">
+      <Filter>ASTRAENGINE\.H\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyStruct.h">
+      <Filter>ASTRAENGINE\.H\LevelSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelLoader.h">
+      <Filter>ASTRAENGINE\.H\LevelSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Pawn.h">
+      <Filter>ASTRAENGINE\.H\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEX.h">
+      <Filter>ASTRAENGINE\.H\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>ASTRAENGINE\.H\LevelSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>ASTRAENGINE\.H\LevelSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine.h">
+      <Filter>ASTRAENGINE\.H\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>ASTRAENGINE\.H\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="TXanimated.h">
+      <Filter>ASTRAENGINE\.H\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDisplay.h" />
+    <ClInclude Include="Dialog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ASTRAENGINE">
+      <UniqueIdentifier>{b2ae43c9-f07f-4ae8-bb17-47102de13560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.CPP">
+      <UniqueIdentifier>{c9c52d83-e963-4b46-8c0c-f45eb17b2b64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.H">
+      <UniqueIdentifier>{95382958-c8d4-4890-b62e-388077b77ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.H\Background">
+      <UniqueIdentifier>{00d9bf7e-92aa-4e78-93c5-91ddb371261b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.H\Actor">
+      <UniqueIdentifier>{6e48f3ce-088c-4f71-afd8-489bef421e7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.CPP\Actor">
+      <UniqueIdentifier>{54f9804e-73c1-45dd-9d4c-79aa4f523810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.CPP\Background">
+      <UniqueIdentifier>{3a0ccc1a-054d-4d1a-b71d-2617606fba89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.H\LevelSystem">
+      <UniqueIdentifier>{6dc65091-6d49-41a7-9b4f-4ae11f2b1bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.CPP\LevelSystem">
+      <UniqueIdentifier>{b6f1fd05-c324-44de-84d1-ed1937464807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.CPP\GUI">
+      <UniqueIdentifier>{001631a3-0ac7-4090-83fe-7fb96bdb5d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.H\GUI">
+      <UniqueIdentifier>{1c14236f-335c-4724-a20c-4d8e7f8f1e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.CPP\Player">
+      <UniqueIdentifier>{e2b35953-203c-474e-8c22-ab2a60b40bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ASTRAENGINE\.H\Player">
+      <UniqueIdentifier>{907014ab-d7cc-4c64-ac2a-909c71019520}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

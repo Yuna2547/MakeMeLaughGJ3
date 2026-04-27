@@ -1,0 +1,4 @@
+sprite/Debug/Baker.png
+22 22
+1
+1

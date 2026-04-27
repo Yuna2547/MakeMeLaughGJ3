@@ -1,0 +1,4 @@
+sprite/idleleft.png
+32 31
+1
+1000
