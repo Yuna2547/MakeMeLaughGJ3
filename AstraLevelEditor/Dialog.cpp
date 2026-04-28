@@ -9,8 +9,8 @@ Dialog::Dialog(sf::RenderWindow& window, std::string face, bool dialogBox, int d
 	text->setFillColor(sf::Color::White);
 	text->setPosition({ 100, 850 });
 
-	rectFace.setPosition({ 50, 555 });
-	rectFace.setSize({ 250, 255 });
+	rectFace.setPosition({ 50, 510 });
+	rectFace.setSize({ 240, 300 });
 
 	rectDial.setPosition({ 0, 805 });
 	rectDial.setSize({ 1920, 180 });
@@ -31,25 +31,25 @@ void Dialog::setText() {
 		fullText = ("Espece de coin coin !");
 	}
 	if (dialog == 1) {
-		fullText = ("T'as dit a Youssef de rentrer chez lui ? T'es raciste en fait !");	
+		fullText = ("Gros bot");	
 	}
 	if (dialog == 2) {
 		fullText = ("Gros canard");
 	}
 	if (dialog == 3) {
-		fullText = ("T'as plus d'appart ? Awww...");
+		fullText = ("Bah alors ? On est soumis ? Coquinou, va !");
 	}
 	if (dialog == 4) {
-		fullText = ("Bah alors ? On est soumis ? Coquinou, va !");
+		fullText = ("T'as plus d'appart ? Awww...");
 	}
 	if (dialog == 5) {
 		fullText = ("Tu batteras jamais le panthéon cinq");
 	}
 	if (dialog == 6) {
-		fullText = ("Awww...");
+		fullText = ("T'as dit a Youssef de rentrer chez lui ? T'es raciste en fait !");
 	}
 	if (dialog == 7) {
-		fullText = ("a");
+		fullText = ("Awww...");
 	}
 	dial.openFromFile("sound/dialog.mp3");
 	dial.setLooping(false);

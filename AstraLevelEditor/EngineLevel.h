@@ -43,16 +43,17 @@ public:
 	sf::Font buttonFont;
 
 	sf::RectangleShape featherButton;
-	sf::Text* featherButtonText;
+	sf::Texture featherButtonTexture;
 
 	sf::RectangleShape handButton;
-	sf::Text* handButtonText;
+	sf::Texture handButtonTexture;
 
 	sf::RectangleShape jokeButton;
-	sf::Text* jokeButtonText;
+	sf::Texture jokeButtonTexture;
 
 	sf::RectangleShape teaseButton;
-	sf::Text* teaseButtonText;
+	sf::Texture teaseButtonTexture;
+
 	bool wasMousePressed;
 
 	bool alexIsSad = false;

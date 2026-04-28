@@ -31,37 +31,25 @@ EngineLevel::EngineLevel(sf::RenderWindow& window, Global& var_) {
 
     buttonFont.openFromFile("font/Pixellettersfull-BnJ5.ttf");
 
-    featherButton.setSize({ 180.f, 50.f });
-    featherButton.setFillColor(sf::Color(80, 60, 120));
+    featherButton.setSize({ 200.f, 200.f });
     featherButton.setPosition({ 20.f, 20.f });
+	featherButtonTexture.loadFromFile("sprite/feather_and_hand.png");
+	featherButton.setTexture(&featherButtonTexture);
 
-    featherButtonText = new sf::Text(buttonFont, "Use Feather", 20);
-    featherButtonText->setFillColor(sf::Color::White);
-    featherButtonText->setPosition({ 30.f, 32.f });
-
-    handButton.setSize({ 180.f, 50.f });
-    handButton.setFillColor(sf::Color(60, 100, 80));
+    handButton.setSize({ 200.f, 200.f });
     handButton.setPosition({ 220.f, 20.f });
+	handButtonTexture.loadFromFile("sprite/hand.png");
+	handButton.setTexture(&handButtonTexture);
 
-    handButtonText = new sf::Text(buttonFont, "Use Hand", 20);
-    handButtonText->setFillColor(sf::Color::White);
-    handButtonText->setPosition({ 230.f, 32.f });
-
-    jokeButton.setSize({ 180.f, 50.f });
-    jokeButton.setFillColor(sf::Color(120, 60, 60));
+    jokeButton.setSize({ 200.f, 200.f });
     jokeButton.setPosition({ 420.f, 20.f });
+	jokeButtonTexture.loadFromFile("sprite/insulte.png");
+	jokeButton.setTexture(&jokeButtonTexture);
 
-    jokeButtonText = new sf::Text(buttonFont, "Joke", 20);
-    jokeButtonText->setFillColor(sf::Color::White);
-    jokeButtonText->setPosition({ 430.f, 32.f });
-
-    teaseButton.setSize({ 180.f, 50.f });
-    teaseButton.setFillColor(sf::Color(120, 100, 40));
+    teaseButton.setSize({ 200.f, 200.f });
     teaseButton.setPosition({ 620.f, 20.f });
-
-    teaseButtonText = new sf::Text(buttonFont, "Tease", 20);
-    teaseButtonText->setFillColor(sf::Color::White);
-    teaseButtonText->setPosition({ 630.f, 32.f });
+	teaseButtonTexture.loadFromFile("sprite/blague.png");
+	teaseButton.setTexture(&teaseButtonTexture);    
 
     wasMousePressed = false;
 }
@@ -75,14 +63,6 @@ EngineLevel::~EngineLevel() {
     alexSprite = nullptr;
     delete cursor;
     cursor = nullptr;
-    delete featherButtonText;
-    featherButtonText = nullptr;
-    delete handButtonText;
-    handButtonText = nullptr;
-    delete jokeButtonText;
-    jokeButtonText = nullptr;
-    delete teaseButtonText;
-    teaseButtonText = nullptr;
 }
 
 void EngineLevel::onComputerDialogFinished() {
@@ -124,7 +104,7 @@ void EngineLevel::handleEvent(const sf::Event& event, sf::RenderWindow& window) 
                 dialog->isActive = true;
             }
             else if (teaseButton.getGlobalBounds().contains(mousePos)) {
-                int randomDialog = 4 + std::rand() % 3;
+                int randomDialog = 4 + std::rand() % 4;
                 dialog->setDialog(randomDialog);
                 dialog->setText();
                 dialog->isActive = true;
@@ -157,12 +137,8 @@ void EngineLevel::displayScene(sf::RenderWindow& window) {
 
     window.draw(featherButton);
     window.draw(handButton);
-    window.draw(*featherButtonText);
-    window.draw(*handButtonText);
     window.draw(jokeButton);
     window.draw(teaseButton);
-    window.draw(*jokeButtonText);
-    window.draw(*teaseButtonText);
 
     cursor->update(window);
     cursor->draw(window);
