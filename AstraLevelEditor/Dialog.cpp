@@ -43,7 +43,7 @@ void Dialog::setText() {
 		fullText = ("T'as plus d'appart ? Awww...");
 	}
 	if (dialog == 5) {
-		fullText = ("Tu batteras jamais le panthéon cinq");
+		fullText = ("Tu batteras jamais le pantheon cinq");
 	}
 	if (dialog == 6) {
 		fullText = ("T'as dit a Youssef de rentrer chez lui ? T'es raciste en fait !");
