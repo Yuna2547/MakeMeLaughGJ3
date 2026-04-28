@@ -140,10 +140,9 @@ void EngineLevel::displayScene(sf::RenderWindow& window) {
     window.draw(jokeButton);
     window.draw(teaseButton);
 
+    dialog->renderDial(window);
     cursor->update(window);
     cursor->draw(window);
-
-    dialog->renderDial(window);
 }
 
 void EngineLevel::nextScene(SceneState& currentScene, keys* _myKeys, sf::RenderWindow& window) {
