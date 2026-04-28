@@ -51,7 +51,7 @@ void Dialog::setText() {
 	if (dialog == 7) {
 		fullText = ("a");
 	}
-	dial.openFromFile("sound/talking.mp3");
+	dial.openFromFile("sound/dialog.mp3");
 	dial.setLooping(false);
 	dial.setVolume(50.f);
 	dial.play();

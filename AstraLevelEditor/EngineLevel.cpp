@@ -7,6 +7,10 @@
 EngineLevel::EngineLevel(sf::RenderWindow& window, Global& var_) {
     backgroundTexture.loadFromFile("level/class.png");
 
+	oof.openFromFile("sound/hurt.mp3");
+	oof.setLooping(false);
+	oof.setVolume(50.f);
+
     wasMousePressed = false;
     dialog = new Dialog(window, "", true, 0);
 
@@ -96,15 +100,16 @@ void EngineLevel::update(const bool* keys, float dt) {
             alexSadTimer = 0.0f;
             alexTexture.loadFromFile("sprite/alexneutre.png");
             alexSprite->setTexture(alexTexture);
+            triste = false;
         }
     }
 }
 
 void EngineLevel::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
+    sf::Vector2i mousePosPerm = sf::Mouse::getPosition(window);
     if (const auto* mp = event.getIf<sf::Event::MouseButtonPressed>()) {
         if (mp->button == sf::Mouse::Button::Left) {
-            sf::Vector2f mousePos(static_cast<float>(mp->position.x),
-                static_cast<float>(mp->position.y));
+            sf::Vector2f mousePos(static_cast<float>(mp->position.x), static_cast<float>(mp->position.y));
 
             if (featherButton.getGlobalBounds().contains(mousePos)) {
                 cursor->setMode(CustomCursor::Mode::Feather);
@@ -124,15 +129,26 @@ void EngineLevel::handleEvent(const sf::Event& event, sf::RenderWindow& window) 
                 dialog->setText();
                 dialog->isActive = true;
             }
-            else if (alexSprite->getGlobalBounds().contains(mousePos)) {
+            else if (alexSprite->getGlobalBounds().contains(mousePos) && !triste ) {
                 alexIsSad = !alexIsSad;
                 if (alexIsSad) {
                     alexTexture.loadFromFile("sprite/alextriste.png");
+                    triste = true;
+					oof.play();
                 }
                 alexSprite->setTexture(alexTexture);
             }
         } 
     }  
+    else if (alexSprite->getGlobalBounds().contains(sf::Vector2f(mousePosPerm)) && !triste && cursor->getMode() == CustomCursor::Mode::Feather) {
+       alexIsSad = !alexIsSad;
+       if (alexIsSad) {
+            alexTexture.loadFromFile("sprite/alextriste.png");
+            triste = true;
+       }
+       alexSprite->setTexture(alexTexture);
+    }
+    
 }
 
 void EngineLevel::displayScene(sf::RenderWindow& window) {
