@@ -37,17 +37,17 @@ EngineLevel::EngineLevel(sf::RenderWindow& window, Global& var_) {
 	featherButton.setTexture(&featherButtonTexture);
 
     handButton.setSize({ 200.f, 200.f });
-    handButton.setPosition({ 220.f, 20.f });
+    handButton.setPosition({ 320.f, 20.f });
 	handButtonTexture.loadFromFile("sprite/hand.png");
 	handButton.setTexture(&handButtonTexture);
 
     jokeButton.setSize({ 200.f, 200.f });
-    jokeButton.setPosition({ 420.f, 20.f });
+    jokeButton.setPosition({ 620.f, 20.f });
 	jokeButtonTexture.loadFromFile("sprite/insulte.png");
 	jokeButton.setTexture(&jokeButtonTexture);
 
     teaseButton.setSize({ 200.f, 200.f });
-    teaseButton.setPosition({ 620.f, 20.f });
+    teaseButton.setPosition({ 920.f, 20.f });
 	teaseButtonTexture.loadFromFile("sprite/blague.png");
 	teaseButton.setTexture(&teaseButtonTexture);    
 
