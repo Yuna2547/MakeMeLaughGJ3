@@ -96,6 +96,7 @@ void EngineLevel::update(const bool* keys, float dt) {
             alexSadTimer = 0.0f;
             alexTexture.loadFromFile("sprite/alexneutre.png");
             alexSprite->setTexture(alexTexture);
+            triste = false;
         }
     }
 }
@@ -124,10 +125,11 @@ void EngineLevel::handleEvent(const sf::Event& event, sf::RenderWindow& window) 
                 dialog->setText();
                 dialog->isActive = true;
             }
-            else if (alexSprite->getGlobalBounds().contains(mousePos)) {
+            else if (alexSprite->getGlobalBounds().contains(mousePos) && !triste ) {
                 alexIsSad = !alexIsSad;
                 if (alexIsSad) {
                     alexTexture.loadFromFile("sprite/alextriste.png");
+                    triste = true;
                 }
                 alexSprite->setTexture(alexTexture);
             }

@@ -43,7 +43,7 @@ void Dialog::setText() {
 		fullText = ("Bah alors ? On est soumis ? Coquinou, va !");
 	}
 	if (dialog == 5) {
-		fullText = ("Tu batteras jamais le panthéon cinq");
+		fullText = ("Tu batteras jamais le pantheon cinq");
 	}
 	if (dialog == 6) {
 		fullText = ("Awww...");

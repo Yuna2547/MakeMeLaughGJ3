@@ -57,4 +57,5 @@ public:
 
 	bool alexIsSad = false;
 	float alexSadTimer = 0.0f;
+	bool triste = false;
 };
